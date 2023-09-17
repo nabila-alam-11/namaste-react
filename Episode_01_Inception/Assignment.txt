@@ -1,0 +1,17 @@
+Episode 01 - Inception
+
+Q. What is Emmet?
+
+A. Emmet is a tool that helps web developers to write HTML, XML and other languages code faster by using shortcuts that automatically expand into full code. 
+
+Q. Difference between a Library and Framework?
+
+A. Library:- A library is like a toolbox that provides pre-written code for specific tasks. You can pick and choose which parts of the library to use in your project, and you have more control over your code's structure and flow. It provides ready-made functions and modules. 
+e.g React is a library.
+
+Framework:- A framework is like a blueprint for building an entire application. It sets the structure, rules, and conventions for your project. Developers work within the framework's guidelines, which can lead to consistency but may limit flexibility.
+e.g. Angular is a framework.
+
+Q. What is CDN? Why do we use it?
+A. 
+
