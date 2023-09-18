@@ -13,5 +13,58 @@ Framework:- A framework is like a blueprint for building an entire application. 
 e.g. Angular is a framework.
 
 Q. What is CDN? Why do we use it?
-A. 
+A. CDN stands for Content Delivery Network.it's like a network of super-fast internet helpers that make websites and apps loads quickly and reliably.
 
+e.g. Imagine you order a pizza online. Instead of one delivery person bringing it from a faraway kitchen, a CDN has many delivery people stationed all over your town with pizzas. When you order, they bring you the pizza from the closest spot, so it's quicker.
+
+=> CDNs help websites and apps work faster because they:
+1. Faster Loading: CDNs speed up websites by storing content closer to users.
+2. Reliability: They ensure websites work consistently, even during traffic spikes.
+3. Global Access: CDNs serve users worldwide, reducing latency.
+4. Cost Savings: CDNs can reduce server infrastructure costs.
+5. Security: They provide protection against cyber attacks.
+6> Improved SEO: Faster websites can rank higher in search results.
+
+Q. Why is React known as React?
+A. React is a  JavaScript library for building user interfaces that was developed and open sourced by Facebook in 2013. It is known as React because it was designed to help developers "react" to changes in the state of an application, by efficiently rendering and updating the UI in response to those changes.
+
+React is designed to be declarative, meaning that developers specify what the UI should look like based on the current state of the application, and React takes care of updating the UI as needed. This allows developers to focus on building the logic of the application rather than worrying about how to update the UI efficiently.
+
+React has gained popularity due to its performance and flexibility, and is widely used in the development of web and mobile applications. It is also used in combination with other technologies, such as the React Native framework for building native mobile apps, and the React VR library for building virtual reality experiences.
+
+Q. What is cross-origin in script tag?
+A. The cross-origin attribute is used in the script tag to indicate that the script should be loaded from a different origin (domain, protocol, or port) than the current page. This is used to allow web pages to load resources from a different domain, while still allowing the browser to apply security measures such as the same-origin policy.
+
+The cross-origin attribute can be set to either anonymous or use-credentials. If set to anonymous, the browser will include an Origin header with the request, but will not send any cookies or other credentials. If set to use-credentials, the browser will include credentials with the request.
+
+The cross-origin attribute is often used to allow web pages to load resources such as fonts or scripts from a CDN (Content Delivery Network). It can also be used to allow web pages to access APIs or other resources from a different domain.
+
+For example, the following script tag includes the cross-origin attribute to allow the script to be loaded from a different origin:
+
+<script src="https://example.com/script.js" cross-origin="anonymous"></script>
+
+
+Q. What is the difference between React and ReactDOM?
+A.  React and ReactDOM are two separate libraries that are often used together in the development of web applications with React.
+
+React is a JavaScript library for building user interfaces. It is designed to be declarative, meaning that developers specify what the UI should look like based on the current state of the application, and React takes care of updating the UI as needed. React is designed to be efficient and flexible, and is widely used in the development of web and mobile applications.
+
+ReactDOM, on the other hand, is a library that provides an interface between React and the DOM (Document Object Model). The DOM is a tree-like structure that represents the HTML of a web page, and ReactDOM provides a set of functions that allow React components to be rendered to the DOM and updated efficiently.
+
+In short, React is a library for building user interfaces, while ReactDOM is a library for interacting with the DOM and rendering React components to the web page. While they are often used together, they serve different purposes and can be used independently of each other.
+
+Q. What is difference between react.development.js and react.production.js files via CDN? 
+A. react.development.js and react.production.js are two different versions of the React library that are available via CDN (Content Delivery Network). These files contain the same code, but are optimized for different environments and have different features enabled.
+
+The react.development.js file is intended for use during development and includes additional features and debugging tools that can be helpful when building and testing React applications. These features may include additional warning messages, error checking, and other tools that can help identify problems or potential issues with the code.
+
+The react.production.js file, on the other hand, is intended for use in production environments and has been optimized for performance and size. It does not include the additional debugging tools and may have other features disabled in order to reduce the size of the file and improve performance.
+
+Which version of the React library you should use depends on your needs and the environment in which the code will be running. In general, the react.development.js file is recommended for use during development, while the react.production.js file is recommended for use in production environments.
+
+Q. What is async and defer?
+A. The async attribute tells the browser to download the script in the background while the page is still loading, and to execute the script as soon as it is available. This can improve the loading speed of the page, as the script does not block the rendering of the page while it is being downloaded. However, the script may not necessarily be executed in the order it appears in the HTML, as it may be executed as soon as it is available.
+
+The defer attribute tells the browser to download the script in the background while the page is still loading, but to execute the script only after the page has finished loading. This can also improve the loading speed of the page, as the script does not block the rendering of the page. However, unlike async, defer ensures that the script is executed in the order it appears in the HTML.
+
+Both async and defer are used to improve the performance and loading speed of web pages by allowing scripts to be loaded and executed in a non-blocking manner. However, they have different behaviors and may be more suitable for different use cases.
