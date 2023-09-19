@@ -119,5 +119,13 @@ By adding the "browserslist" key with your target browser queries to the "packag
 
 source: "https://browserslist.dev/?q=bGFzdCAyIHZlcnNpb25z"
 
+* npm init
+* npm install -d parcel
+* npm install react
+* npm install react-dom
+* npx parcel 'source-file' 
+- source-file: index.html
+
+
 
 

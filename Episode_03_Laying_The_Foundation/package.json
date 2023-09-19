@@ -1,0 +1,24 @@
+{
+  "name": "episode_03_laying_the_foundation",
+  "version": "1.0.0",
+  "description": "Laying the foundation",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/nabila-alam-11/namaste_react.git)"
+  },
+  "keywords": [],
+  "author": "Nabila Alam",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.9.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
