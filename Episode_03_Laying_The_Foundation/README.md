@@ -43,11 +43,50 @@ Scripts in package.json:-
 
   * If you have to use attributes in JSX, you have to use camel case.
 
-  * Single line and multiple line JSX:
-  -Multiple Line JSX: A JSX expression that spans multiple lines must be wrapped in parentheses.
+  
+* Single line and multiple line JSX:
 
-  Why we wrapped JSX in parentheses?
-  - Because Babel needs to understand where is JSX starting and where it is ending.
+  * Multiple Line JSX: A JSX expression that spans multiple lines must be wrapped in parentheses.
+
+  * Why we wrapped JSX in parentheses?
+    * Because Babel needs to understand where is JSX starting and where it is ending
+
+* React Components:
+  * Everything is a component in React.
+  * Header, Navbar, Footer, Card everything is an example of component.
+  * There are two types of components:
+    * 1. Class based components - old way
+    * 2. Function based components - new way
+
+  * Functional based components:-
+    * Functional based component is just normal javascript function.
+    * Name it with a capital letter.
+    * Normal javascript function which returns some piece of JSX code.
+    * We can also say that a functional component is Javascript function which returns a React Element.
+
+* Nested JSX elements:
+  * In order for the code to compile, a JSX expression must have exactly one outermost element.
+  * Component Composition: Composing components in one another components.
+  
+  * We can also  use a normal function as a component also.
+
+* Embedding JavaScript in JSX
+  * JavaScript expressions may be embedded within JSX expressions. The embedded JavaScript expression must be wrapped in curly braces.
+  * e.g. let expr = <h1>{10 * 10}</h1>;
+    - // above will be rendered as <h1>100</h1>
+  *  When this JSX expression is rendered to the DOM, the embedded JavaScript expression is evaluated and rendered as 100 as the content of the <h1> tag.
+
+* How do I put my react element inside my component?
+  * react element is a normal javascript variable, so to put normal js variable inside a component, you wrap it into  curly braces. e.g. {title}
+
+
+
+
+
+
+
+
+
 
 
  
