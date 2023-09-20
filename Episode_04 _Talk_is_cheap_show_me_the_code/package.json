@@ -1,0 +1,24 @@
+{
+  "name": "episode_04-_talk_is_cheap_show_me_the_code",
+  "version": "1.0.0",
+  "description": "Talk is cheap, show me the code",
+  "scripts": {
+    "dev": "parcel index.html",
+    "prod": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/nabila-alam-11/namaste-react.git"
+  },
+  "author": "Nabila Alam",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.9.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
