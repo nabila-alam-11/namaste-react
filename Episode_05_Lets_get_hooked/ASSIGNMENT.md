@@ -1,7 +1,7 @@
 # EPISODE 05 - LET'S GET HOOKED
 
 * Q1:- What is the difference between Named Export, Default export and * as export?
-  A1:- Import & Export Modules are ES6 features that allows us to write reusable js code (modules), which when exported, allowing other modules to use it by importing.
+  * A1:- Import & Export Modules are ES6 features that allows us to write reusable js code (modules), which when exported, allowing other modules to use it by importing.
 
  * Named Export : Placing the keyword export before the component/variable/object/module anything that you want to export. There can be more than one named component in a file. While importing the Component name must be enclosed within {}.
 
@@ -26,19 +26,19 @@ In app.js, while importing use import * as MainHeader from './components/Header'
 
 
 * Q2:- What is the importance of constant.js file?
-  A2:- config.js file can be used to store the hardcoded values in one file, so that when the value needs to be modified, it can be easy to do the modification in one file.
+  * A2:- config.js file can be used to store the hardcoded values in one file, so that when the value needs to be modified, it can be easy to do the modification in one file.
 
  Example : All API Base URLs, CDN links, config data from backend, default values needed in the app are could be placed in config.js file.
 
 * Q3:- What are React Hooks?
-  A3:- React Hooks are new addition to React from React 16.8 version. Earlier, state and other component features could be handled only using Class Components. But with version 16.8, React introduced a new pattern called Hooks. With React Hooks, we can use state, and other React features, in a functional component empowering functional programming in React.
+   * A3:- React Hooks are new addition to React from React 16.8 version. Earlier, state and other component features could be handled only using Class Components. But with version 16.8, React introduced a new pattern called Hooks. With React Hooks, we can use state, and other React features, in a functional component empowering functional programming in React.
 
   * Hooks are JavaScript functions that manage the state's behaviour and side effects by isolating them from a component.
 
   * React provides a bunch of standard in-built hooks like useState(), useEffect(), useContext(), useReducer(), useCallback, useMemo(), useRef(), useLayoutEffect(), useDebugValue() and other additional hooks.
 
 * Q4:- Why do we need useState() hook?
-  A4:- 
+   * A4:- 
      * The useState() hook is crucial for managing state within React functional components. State represents data that changes over time,such as user input or data fetched from an API. It's essential because it allows components to be interactive and dynamic.
 
      * In modern React, functional components have become the preferred way to build UI components. Before hooks were introduced, class components were used for state management. useState() empowers functional components to manage state effectively, making code simpler and more readable.
