@@ -6,10 +6,10 @@
   * Here's an example of JSX code in React:-
   * function App() {
     return (
-     <div>
-       <h1>Hello, React!</h1>
-       <p>This is a JSX component.</p>
-     </div>
+     * <div>
+       * <h1>Hello, React!</h1>
+       * <p>This is a JSX component.</p>
+     * </div>
     );
   }
  * In the example above, JSX is used to define the  structure of a React component. It looks similar to HTML but is actually transpiled to JavaScript code that React can understand.
@@ -20,30 +20,30 @@
     * Imports and Exports:- ES6 introduced `import` and `export` statements for module management. React components and other JavaScript modules are commonly organized and imported/exported using ES6 module syntax.
  *  Additionally, many of the tools and libraries commonly used with React, such as Babel, Webpack,ESLint, Prettier, React Router, Redux, Axios/Fetch, Jest/Testing Library and more are configured to work seamlessly with ES6 syntax.
 
-* Q3:- {TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>} in JSX?
+* Q3:- {TitleComponent} vs * { <TitleComponent/> } vs 8 { <TitleComponent></TitleComponent> } in JSX?
   * A3:- The Difference is stated below:
 
   * {TitleComponent}: This value describes the TitleComponent as a javascript expression or a variable. The {} can embed a javascript expression or a variable inside it.
   * <TitleComponent/> : This value represents a Component that is basically returning Some JSX value. In simple terms TitleComponent a function that is returning a JSX value. A component is written inside the {<  />} expression.
   * <TitleComponent></TitleComponent> : <TitleComponent /> and <TitleComponent></TitleComponent> are equivalent only when < TitleComponent /> has no child components. The opening and closing tags are created to include the child components.
   * <TitleComponent>
-    <FirstChildComponent />
-    <SecondChildComponent />
-    <ThirdChildComponent />
-</TitleComponent>
+    * <FirstChildComponent />
+    * <SecondChildComponent />
+    * <ThirdChildComponent />
+  * </TitleComponent>
 
 * Q4:- How can I write comments in JSX?
   * A4: In JSX, comments should be wrapped in curly braces {} and use JavaScript-style comments (// for single-line comments and /* */ for multi-line comments). 
   e.g. {/*
-          This is a multi-line comment.
-          It provides more extensive information about the code.
+          * This is a multi-line comment.
+          * It provides more extensive information about the code.
       */}
 
 * Q5:- What isr <React.Fragment></React.Fragment> and <></> ?
   * A5:- <Fragment>, often used via <>...</> syntax, lets you group elements without a wrapper node.
     <>
-      <OneChild/>
-      <AnotherChild/>
+      * <OneChild/>
+      * <AnotherChild/>
     </>
 
   * Wrap elements in <Fragment> to group them together in situations where you need a single element. Grouping elements in Fragment has no effect on the resulting DOM; it is the same as if the elements were not grouped. The empty JSX tag <></> is shorthand for <Fragment></Fragment> in most cases.
@@ -53,9 +53,10 @@
   * const App = () => {
     return (
         <>
-         <Header/>
-         <Main/>
-         <Footer/>
+         * <Header/>
+         * <Main/>
+         * <Footer/>
+        </>
     )
   }
 
@@ -73,7 +74,7 @@
   * Layout Calculations: 
     * Layout calculations, in web development, refer to the process where a web browser determines the size, position, and flow of elements on a web page based on their content, styles, and structure.
 
-    Reconciliation: https://github.com/acdlite/react-fiber-architecture
+    * Reconciliation: https://github.com/acdlite/react-fiber-architecture
 
 * Q8. What is React Fiber?
   * A8:- React Fiber is the new reconciliation engine in React 16. The goal of React Fiber is to increase its suitability for areas like animation, layout, and gestures. Its headline feature is incremental rendering: the ability to split rendering work into chunks and spread it out over multiple frames.
@@ -114,36 +115,36 @@
    * One Way:-
     * Ways to pass props to one component:-
       *Add props to the JSX, just like you would with HTML attributes.
-      <RestaurantCard resName="Burger King" location="Delhi"/>
+      * <RestaurantCard resName="Burger King" location="Delhi"/>
     * Ways to receive props in another component.
-    	const Profile = (props) => {
-            return (
-                <h1>Restaurant Name: {props.resName}</h1>
-                <h2>Location: {props.location}</h2>
+    	* const Profile = (props) => {
+            * return (
+                * <h1>Restaurant Name: {props.resName}</h1>
+                * <h2>Location: {props.location}</h2>
             )
         }
 
    * second way:-
     * Ways to pass props to one component:-
-      <RestaurantCard resName="Burger King" location="Delhi"/>
+      * <RestaurantCard resName="Burger King" location="Delhi"/>
     * Ways to receive props in another component using Destructuring
-    	const Profile = ({resName, location}) => {
-            return (
-                <h1>Restaurant Name: {resName}</h1>
-                <h2>Location: {location}</h2>
+    	* const Profile = ({resName, location}) => {
+            * return (
+                * <h1>Restaurant Name: {resName}</h1>
+                * <h2>Location: {location}</h2>
             )
         } 
 
    * Third Way:-
      * Ways to pass props to one component:-
       *Add props to the JSX, just like you would with HTML attributes.
-      <RestaurantCard resName="Burger King" location="Delhi"/>
+      * <RestaurantCard resName="Burger King" location="Delhi"/>
      * Ways to receive props in another component.
-    	const Profile = (props) => {
-            const { resName, location} = props;
-            return (
-                <h1>Restaurant Name: {resName}</h1>
-                <h2>Location: {location}</h2>
+    	* const Profile = (props) => {
+            * const { resName, location} = props;
+            * return (
+                * <h1>Restaurant Name: {resName}</h1>
+                * <h2>Location: {location}</h2>
             )
         }
     
