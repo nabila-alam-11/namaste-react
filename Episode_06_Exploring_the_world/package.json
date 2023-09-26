@@ -1,0 +1,24 @@
+{
+  "name": "episode_06_exploring_the_world",
+  "version": "1.0.0",
+  "description": "Exploring the world",
+  "scripts": {
+    "dev": "parcel index.html",
+    "prod": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/nabila-alam-11/namaste-react.git)"
+  },
+  "author": "Nabila Alam",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.9.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
